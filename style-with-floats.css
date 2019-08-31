@@ -2,13 +2,21 @@
     box-sizing: border-box
 }
 
+body {
+    background-color: wheat;  /* change the brackgound color of the page for now: this works! */
+}
 .container {
     margin: 0 auto;
+    
+    /* will remove this to see if gap at top of page goes away:this removes most of it! : this works! 
+    I like it!
     margin-top: 50px;
+    */
+    
     width: 1000px;
     height: 600px;
     border: 2px solid black;
-    background-color: white;
+    /*background-color: wheat;  change the brackgound color of the page for now: this works! */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: black;
@@ -16,33 +24,64 @@
 
     header {
         height: 100px;
-        padding-top: 30px;
-        border: 1px solid black;
-        font-size: 1em;
+        padding-top: 35px; /* adjust padding to vertically center font */
+
+        /* step 1 in border simplification and synchronization (S&S) : this works!
+        border: 2px solid black;
+
+        */
+        border-bottom: 2px solid black; /*step 2 in S&S */
+        font-size: 0.75em; /* decrease font size to mke room for pics */
         text-align: center;
     }
 
     aside  {
         width : 25% ;
-        height : 400px ;
+        height : 450px ;
         padding : 10px ;
+       
+       /* step 1 in border simplification and synchronization (S&S) : this works!
+        border: 2px solid black;
+        */
+        
+        font-size: 0.55em;  /* new change deccreasing font size in aside: this works! */
+    }
+                       /* make outer borders same as inner borders in width -> Done */
+    
+    /* start new code */    
+    .items {
         border: 1px solid black;
     }
+    /* end new code */
+    p {
+        margin: 0;  /* decrease margins to 0 for p elements in aside: this works!  */
+        border: 1px solid black;  /* place black boarder around each p element: this works! */ 
+        
+    }
+        
 
+    .tall {
+        height: 340px;  /* attempt to make 2nd aside box tall : this works! */
+    }
     main {
         width: 75%;
-        height: 400px;
-        padding: 10px;
+        height: 450px;
+        padding: 20px;  /* add padding on top to center the text vertically : this works! */
+        
+        /* step 1 in border simplification and synchronization (S&S)
         border: 1px solid black;
+        */
+        border-left: 2px solid black; /*step 2 in S&S : this works! */
         font-size: 0.55em;
     }
 
     footer {
         width: 100%;
-        height: 100px;
-        padding: 10px;
-        text-align: center;
-        border: 1px solid black;
+        height: 50px;
+        padding-top: 13px;  /* adding this to center footer: this works! */
+        border-top: 2px solid black;  /*step 2 in S&S : this works! */
+        text-align: center;  /* adding this to center footer: this works! */
+        font-size: .5em;
     }
 
 .clearfix::after {
