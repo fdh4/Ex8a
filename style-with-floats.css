@@ -26,7 +26,7 @@ body {
 
     header {
         height: 100px;
-        padding-top: 35px; /* adjust padding to vertically center font */
+        /*padding-top: 35px;  adjust padding to vertically center font */
 
         /* step 1 in border simplification and synchronization (S&S) : this works!
         border: 2px solid black;
