@@ -3,20 +3,22 @@
 }
 
 body {
-    background-color: wheat;  /* change the brackgound color of the page for now: this works! */
+    background-color: ivory;  /* change the brackgound color of the page for now: this works! */
 }
 .container {
     margin: 0 auto;
     
-    /* will remove this to see if gap at top of page goes away:this removes most of it! : this works! 
+    /* Removed the following line to see if gap at top of page goes away:this removes most of it! : this works! 
     I like it!
-    margin-top: 50px;
+
+    margin-top: 50px;  -- this is gone!
+
     */
     
     width: 1000px;
     height: 600px;
     border: 2px solid black;
-    /*background-color: wheat;  change the brackgound color of the page for now: this works! */
+    background-color: rgb(240, 227, 203);  /* change the brackgound color of the container: ok but needs improvement */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: black;
@@ -56,17 +58,15 @@ body {
     p {
         margin: 0;  /* decrease margins to 0 for p elements in aside: this works!  */
         border: 1px solid black;  /* place black boarder around each p element: this works! */ 
-        
     }
         
-
     .tall {
         height: 340px;  /* attempt to make 2nd aside box tall : this works! */
     }
     main {
         width: 75%;
         height: 450px;
-        padding: 20px;  /* add padding on top to center the text vertically : this works! */
+        padding: 35px;  /* add padding on top to center the text vertically : this works! */
         
         /* step 1 in border simplification and synchronization (S&S)
         border: 1px solid black;
