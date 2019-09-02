@@ -63,7 +63,8 @@ body {
     /* end new code */
     p {
         margin: 0;  /* decrease margins to 0 for p elements in aside: this works!  */
-        border: 1px solid black;  /* place black boarder around each p element: this works! */ 
+        border: 1px solid black;  /* place black boarder around each p element: this works! */
+        padding-left: 10px;  /* a little spece before the link please */
     }
         
     .tall {
@@ -79,6 +80,10 @@ body {
         */
         border-left: 2px solid black; /*step 2 in S&S : this works! */
         font-size: 0.55em;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     footer {
