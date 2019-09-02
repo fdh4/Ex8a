@@ -26,14 +26,20 @@ body {
 
     header {
         height: 100px;
-        /*padding-top: 35px;  adjust padding to vertically center font */
+        /* attempt to center text horizontally and vertically with img on each side */
 
         /* step 1 in border simplification and synchronization (S&S) : this works!
-        border: 2px solid black;
-
-        */
-        border-bottom: 2px solid black; /*step 2 in S&S */
+        border: 2px solid black; */
+        border-bottom: 2px solid black; /*step 2 in S&S: This works! */
         font-size: 0.75em; /* decrease font size to mke room for pics */
+        text-align: center;
+    }
+
+    .headerText {
+        width: 796px;  /*attempt to center text horizontally and vertically with img on each side */
+        border: none;
+        padding: 34.5px;
+        float: left;
         text-align: center;
     }
 
