@@ -41,6 +41,7 @@ body {
         padding: 34.5px;
         float: left;
         text-align: center;
+        font-weight: bold;
     }
 
     aside  {
@@ -52,46 +53,72 @@ body {
         border: 2px solid black;
         */
         
-        font-size: 0.55em;  /* new change deccreasing font size in aside: this works! */
+        font-size: 0.55em;  /* Deccrease font size in aside. This works! */
     }
-                       /* make outer borders same as inner borders in width -> Done */
+                       /* Make outer borders same as inner borders in width This works! */
     
     /* start new code */    
     .items {
         border: 1px solid black;
+        text-align: center; /* Center text in the aside element */
     }
     /* end new code */
+
     p {
-        margin: 0;  /* decrease margins to 0 for p elements in aside: this works!  */
-        border: 1px solid black;  /* place black boarder around each p element: this works! */
-        padding-left: 10px;  /* a little spece before the link please */
+        margin: 0;  /* decrease margins to 0 for p elements in aside. hTis works!  */
+        border: 1px solid black;  /* place black boarder around each p element. This works! */
+        /*padding-left: 10px;   Padding before the links. This works! */
     }
         
-    .tall {
-        height: 340px;  /* attempt to make 2nd aside box tall : this works! */
+    p.tall {
+        height: 340px;  /* Make 2nd aside box tall.  Done. This works! */
+        padding-top: 317px; /* Move link to bottom of this element. Done. This works! */
+
+        /* Here are some alternate images and bkg colors for this element; 
+           re-edit image if necessary to keep focus on text of address 
+           there are more which need have imaages edited and bckgnd clor optimized 
+           in the same folder as the index file (ex8a) */
+
+            /*background-image: url("MLKatLM.png");
+            background-color: rgb(67, 139, 139);*/
+
+            /*background-image: url("GburgMonMD.png")
+            background-color: rgb(67, 139, 139);
+            NOT SURE ABOUT THE BACKGROUND COLOR FOR THIS ONE NEED TO OPTIMIZE */ 
+
+
+        background-image: url("ALprofile2.png");
+        background-color: rgb(219, 173, 87);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-blend-mode: screen;
     }
+
     main {
         width: 75%;
         height: 450px;
-        padding: 35px;  /* add padding on top to center the text vertically : this works! */
+        padding: 30px;  /* add padding on top to center the text vertically : this works! */
         
         /* step 1 in border simplification and synchronization (S&S)
-        border: 1px solid black;
-        */
+        border: 1px solid black; -- taking this out works!*/
+
         border-left: 2px solid black; /*step 2 in S&S : this works! */
         font-size: 0.55em;
-    }
-
-    a {
-        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-image: url("LMphoto.png");
+        background-color: rgb(206, 168, 127);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-blend-mode: screen;
     }
 
     footer {
         width: 100%;
         height: 50px;
-        padding-top: 13px;  /* adding this to center footer: this works! */
+        padding-top: 13px;  /* Added this to center footer vertically: this works! ?BCP*/
         border-top: 2px solid black;  /*step 2 in S&S : this works! */
-        text-align: center;  /* adding this to center footer: this works! */
+        text-align: center;  /* added this to center footer horizontally: this works!?BCP */
         font-size: .5em;
     }
 
